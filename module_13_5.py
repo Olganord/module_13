@@ -3,7 +3,7 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
-api = '***'
+api = '7712800845:AAFYF0DKC9C1LvFrK2qyYIB7GfP7lFlpY4Q'
 bot = Bot(token=api)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
@@ -100,8 +100,7 @@ async def process_weight(message, state):
 
 @dp.message_handler()
 async def all_message(message):
-    print('Введите команду /start, чтобы начать общение.')
-
+    await message.answer('Введите команду /start, чтобы начать общение.')
 
 
 if __name__ == "__main__":
